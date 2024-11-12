@@ -1,31 +1,43 @@
-<script lang="ts">
-	export let data;
-</script>
+<svelte:head>
+	<title>loganwoolf.dev</title>
+</svelte:head>
 
-<h1>Hello</h1>
+<div class="page page--home">
+	<div class="content">
+		<h1 class="heading">Hey!</h1>
+		<p>
+			Thanks for visiting my site. I'm Logan Woolf, a frontend web developer currently residing in
+			Lethbridge, AB, Canada. There are posts here about building for the web and some information
+			about me.
+		</p>
+		<nav>
+			<ul>
+				<li><a href="/posts">Posts</a></li>
+				<li><a href="/about">About Me</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
 
-<h2>Posts</h2>
-<ul>
-	{#each data.posts.items as post}
-		<li>
-			<article>
-				<header>
-					<h3>{post.title}</h3>
-				</header>
-				<main>
-					<p>{@html post.content}</p>
-				</main>
-				<footer>
-					<p>Tags</p>
-					<ul>
-						{#each post.tags as postTag}
-							<li>
-								{data.tags.find((tag) => tag.id === postTag)?.name}
-							</li>
-						{/each}
-					</ul>
-				</footer>
-			</article>
-		</li>
-	{/each}
-</ul>
+<style>
+	:global {
+		body {
+			margin: 0;
+		}
+	}
+
+	.page--home {
+		display: grid;
+		place-content: center;
+		height: 100dvh;
+	}
+
+	.content {
+		max-width: 40ch;
+		text-align: justify;
+	}
+
+	.heading {
+		margin-top: unset;
+	}
+</style>
