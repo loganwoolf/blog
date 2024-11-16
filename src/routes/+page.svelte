@@ -1,6 +1,8 @@
-<svelte:head>
-	<title>loganwoolf.dev</title>
-</svelte:head>
+<script lang="ts">
+	import Title from '$lib/Title.svelte';
+</script>
+
+<Title />
 
 <div class="page page--home">
 	<div class="content">

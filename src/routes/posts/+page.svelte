@@ -1,12 +1,11 @@
 <script lang="ts">
+	import Title from '$lib/Title.svelte';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
 </script>
 
-<svelte:head>
-	<title>posts on loganwoolf.dev</title>
-</svelte:head>
+<Title title="Posts" />
 
 <div class="page page--posts">
 	<a href="/">Back to Home</a>

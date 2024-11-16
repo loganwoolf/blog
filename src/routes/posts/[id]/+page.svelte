@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Title from '$lib/Title.svelte';
 	import { micromark } from 'micromark';
 	import type { PageData } from './$types';
 
@@ -6,11 +7,7 @@
 	console.log({ data });
 </script>
 
-<svelte:head>
-	<title>{data.post.title} on loganwoolf.dev</title>
-</svelte:head>
-
-<a href="/posts">Back to Posts</a>
+<Title title={data.post.title} />
 
 <div class="page page--post">
 	<div class="content">
