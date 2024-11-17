@@ -18,7 +18,7 @@
 			{#each data.posts.items as post}
 				<li>
 					<article>
-						<h1>{post.title}</h1>
+						<h1 class="heading">{post.title}</h1>
 						<p><PostDate date={post.publish_date} /></p>
 						<Markdown markdown={post.markdown.split('\n')[0]} />
 						<p><a href="/posts/{post.id}">Read</a></p>
@@ -41,5 +41,19 @@
 			margin: auto;
 			max-width: 70ch;
 		}
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	article {
+		border: 1px solid black;
+		padding: 2em;
+		margin-bottom: 2rem;
+	}
+
+	.heading {
+		margin-top: 0;
 	}
 </style>
