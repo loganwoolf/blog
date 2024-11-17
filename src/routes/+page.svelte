@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Title from '$lib/Title.svelte';
+	import Title from '$lib/components/Title.svelte';
 </script>
 
 <Title />
@@ -8,9 +8,8 @@
 	<div class="content">
 		<h1 class="heading">Hey!</h1>
 		<p>
-			Thanks for visiting my site. I'm Logan Woolf, a frontend web developer currently residing in
-			Lethbridge, AB, Canada. There are posts here about building for the web and some information
-			about me.
+			Thanks for visiting my site. I'm Logan Woolf, a frontend web developer from Lethbridge,
+			Canada. There are posts here about building for the web and some information about me.
 		</p>
 		<nav>
 			<ul>

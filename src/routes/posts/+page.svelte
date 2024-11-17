@@ -1,5 +1,8 @@
 <script lang="ts">
-	import Title from '$lib/Title.svelte';
+	import Markdown from '$lib/components/Markdown.svelte';
+	import PostDate from '$lib/components/PostDate.svelte';
+	import PostTags from '$lib/components/PostTags.svelte';
+	import Title from '$lib/components/Title.svelte';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
@@ -15,18 +18,11 @@
 			{#each data.posts.items as post}
 				<li>
 					<article>
-						<h3>{post.title}</h3>
-						<p>{post.published_date}</p>
-						<p>
-							<a href="/posts/{post.id}">Read</a>
-						</p>
-						<ul>
-							{#each post.tags as postTag}
-								<li>
-									{data.tags.find((tag) => tag.id === postTag)?.name}
-								</li>
-							{/each}
-						</ul>
+						<h1>{post.title}</h1>
+						<p><PostDate date={post.publish_date} /></p>
+						<Markdown markdown={post.markdown.split('\n')[0]} />
+						<p><a href="/posts/{post.id}">Read</a></p>
+						<PostTags {post} tags={data.tags} />
 					</article>
 				</li>
 			{/each}
