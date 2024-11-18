@@ -4,33 +4,27 @@
 
 <Title />
 
-<div class="page page--home">
-	<div class="content">
+<div class="page page--home center">
+	<main class="content">
 		<h1 class="heading">Hey!</h1>
 		<p>
 			Thanks for visiting my site. I'm Logan Woolf, a frontend web developer from Lethbridge,
-			Canada. There are posts here about building for the web and some information about me.
+			Canada. There are posts here about building for the web and a bit of information about me.
 		</p>
-		<nav>
-			<ul>
-				<li><a href="/posts">Posts</a></li>
-				<li><a href="/about">About Me</a></li>
-			</ul>
-		</nav>
-	</div>
+	</main>
 </div>
 
 <style>
 	:global {
-		body {
-			margin: 0;
+		.content {
+			margin: auto;
+			max-width: 70ch;
 		}
-	}
 
-	.page--home {
-		display: grid;
-		place-content: center;
-		height: 100dvh;
+		.center {
+			display: grid;
+			place-content: center;
+		}
 	}
 
 	.content {

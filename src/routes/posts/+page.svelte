@@ -30,20 +30,9 @@
 </div>
 
 <style>
-	:global {
-		.page {
-			margin: 2rem auto;
-			max-width: 960px;
-		}
-
-		.content {
-			margin: auto;
-			max-width: 70ch;
-		}
-	}
-
 	ul {
 		list-style: none;
+		padding: 0;
 	}
 
 	article {
