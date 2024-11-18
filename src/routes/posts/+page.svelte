@@ -8,11 +8,11 @@
 	let { data }: { data: PageData } = $props();
 </script>
 
-<Title title="Posts" />
+<Title title={data.pageTitle} />
 
 <main class="page page--posts">
 	<div class="content">
-		<h1>Posts</h1>
+		<h1>{data.pageTitle}</h1>
 		<ul>
 			{#each data.posts.items as post}
 				<li>
