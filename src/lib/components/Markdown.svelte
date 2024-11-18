@@ -9,12 +9,16 @@
 </div>
 
 <style>
-	:global {
-		.markdown {
-			pre {
-				border: 1px solid black;
-				padding: 1em;
-			}
+	.markdown :global {
+		h1 {
+			margin-top: 0;
+		}
+
+		pre {
+			border: 1px solid black;
+			padding: 1em;
+			overflow: auto;
+			scrollbar-width: thin;
 		}
 	}
 </style>

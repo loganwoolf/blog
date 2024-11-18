@@ -22,9 +22,13 @@
 </div>
 
 <style>
-	:global {
-		pre {
-			text-wrap: wrap;
+	.page--post {
+		margin-top: 1.5rem;
+	}
+
+	article :global {
+		footer {
+			margin-top: 2em;
 		}
 	}
 </style>

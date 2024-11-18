@@ -1,4 +1,6 @@
 <script>
+	import '../app.css';
+
 	let { children } = $props();
 </script>
 
@@ -24,27 +26,6 @@
 </footer>
 
 <style>
-	:global {
-		body {
-			display: flex;
-			flex-direction: column;
-			min-height: 100dvh;
-			margin: 0 auto;
-			max-width: 832px;
-			padding: 0 2rem;
-			box-sizing: border-box;
-		}
-
-		.page {
-			flex: 1;
-		}
-
-		a,
-		a:visited {
-			color: black;
-		}
-	}
-
 	header {
 		ul {
 			display: flex;

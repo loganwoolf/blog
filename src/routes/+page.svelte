@@ -15,24 +15,16 @@
 </div>
 
 <style>
-	:global {
-		.content {
-			margin: auto;
-			max-width: 70ch;
-		}
-
-		.center {
-			display: grid;
-			place-content: center;
-		}
-	}
-
-	.content {
-		max-width: 40ch;
-		text-align: justify;
+	.page--home {
+		max-width: 35ch;
+		margin: 0 auto;
 	}
 
 	.heading {
 		margin-top: unset;
+	}
+
+	.content {
+		text-align: justify;
 	}
 </style>
