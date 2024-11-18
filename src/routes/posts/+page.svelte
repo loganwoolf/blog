@@ -11,7 +11,6 @@
 <Title title="Posts" />
 
 <div class="page page--posts">
-	<a href="/">Back to Home</a>
 	<div class="content">
 		<h1>Posts</h1>
 		<ul>

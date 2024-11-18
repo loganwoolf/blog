@@ -11,7 +11,6 @@
 <Title title={data.post.title} />
 
 <div class="page page--post">
-	<a href="/posts">Back to Posts</a>
 	<div class="content">
 		<article>
 			<h1>{data.post.title}</h1>
