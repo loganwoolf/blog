@@ -10,24 +10,30 @@
 
 <Title title="Posts" />
 
-<div class="page page--posts">
+<main class="page page--posts">
 	<div class="content">
 		<h1>Posts</h1>
 		<ul>
 			{#each data.posts.items as post}
 				<li>
 					<article>
-						<h1 class="heading">{post.title}</h1>
-						<p><PostDate date={post.publish_date} /></p>
-						<Markdown markdown={post.markdown.split('\n')[0]} />
-						<p><a href="/posts/{post.id}">Read</a></p>
-						<PostTags {post} tags={data.tags} />
+						<header>
+							<div class="heading"><Markdown markdown={'# ' + post.title} /></div>
+							<p><PostDate date={post.publish_date} /></p>
+						</header>
+						<main>
+							<Markdown markdown={post.markdown.split('\n')[0]} />
+							<p><a href="/posts/{post.id}">Read</a></p>
+						</main>
+						<footer>
+							<PostTags {post} tags={data.tags} />
+						</footer>
 					</article>
 				</li>
 			{/each}
 		</ul>
 	</div>
-</div>
+</main>
 
 <style>
 	ul {

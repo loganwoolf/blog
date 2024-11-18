@@ -10,16 +10,24 @@
 
 <Title title={data.post.title} />
 
-<div class="page page--post">
+<main class="page page--post">
 	<div class="content">
 		<article>
-			<h1>{data.post.title}</h1>
-			<PostDate date={data.post.publish_date} />
-			<Markdown markdown={data.post.markdown} />
-			<PostTags post={data.post} tags={data.tags} />
+			<header>
+				<Markdown markdown={'# ' + data.post.title} />
+				<div>
+					<PostDate date={data.post.publish_date} />
+				</div>
+			</header>
+			<main>
+				<Markdown markdown={data.post.markdown} />
+			</main>
+			<footer>
+				<PostTags post={data.post} tags={data.tags} />
+			</footer>
 		</article>
 	</div>
-</div>
+</main>
 
 <style>
 	.page--post {
