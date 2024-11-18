@@ -1,12 +1,21 @@
 <script lang="ts">
 	let { post, tags } = $props();
+
+	const postTags = $derived(
+		post.tags.map(
+			(postTag: string) =>
+				tags.find((tag: { id: string; name: string }) => tag.id === postTag)?.name
+		)
+	);
 </script>
 
 <footer>
 	<ul>
-		{#each post.tags as postTag}
+		{#each postTags as postTag}
 			<li>
-				#{tags.find((tag: { id: string; name: string }) => tag.id === postTag)?.name}
+				<a href="/posts?tag={postTag}">
+					#{postTag}
+				</a>
 			</li>
 		{/each}
 	</ul>
@@ -28,5 +37,9 @@
 	li {
 		display: inline;
 		margin-right: 0.5em;
+	}
+
+	a:not(:hover) {
+		text-decoration: none;
 	}
 </style>
