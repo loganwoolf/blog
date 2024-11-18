@@ -17,14 +17,17 @@
 			{#each data.posts.items as post}
 				<li>
 					<article>
-						<header>
-							<div class="heading"><Markdown markdown={'# ' + post.title} /></div>
-							<p><PostDate date={post.publish_date} /></p>
-						</header>
-						<main>
-							<Markdown markdown={post.markdown.split('\n')[0]} />
-							<p><a href="/posts/{post.id}">Read</a></p>
-						</main>
+						<div class="relative">
+							<header>
+								<div class="heading">
+									<Markdown markdown={`# [${post.title}](/posts/${post.id})`} />
+								</div>
+								<p><PostDate date={post.publish_date} /></p>
+							</header>
+							<main>
+								<Markdown markdown={post.markdown.split('\n')[0]} />
+							</main>
+						</div>
 						<footer>
 							<PostTags {post} tags={data.tags} />
 						</footer>
@@ -42,12 +45,48 @@
 	}
 
 	article {
+		--padding-block: 1rem;
+		--padding-inline: 2rem;
+		--shadow-size: 4px;
 		border: 1px solid black;
-		padding: 2em;
 		margin-bottom: 2rem;
+
+		& :global {
+			&:has(.heading a:hover) {
+				box-shadow: var(--shadow-size) var(--shadow-size) 0px black;
+			}
+		}
+	}
+
+	.relative {
+		position: relative;
+		padding: var(--padding-block) var(--padding-inline) 0;
 	}
 
 	.heading {
+		display: block;
 		margin-top: 0;
+
+		& :global {
+			a {
+				&:after {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+				}
+
+				&:not(:hover) {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	footer {
+		padding: 0 var(--padding-inline) var(--padding-block);
+		z-index: 2;
 	}
 </style>

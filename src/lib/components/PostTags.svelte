@@ -9,29 +9,22 @@
 	);
 </script>
 
-<footer>
-	<ul>
-		{#each postTags as postTag}
-			<li>
-				<a href="/posts?tag={postTag}">
-					#{postTag}
-				</a>
-			</li>
-		{/each}
-	</ul>
-</footer>
+<ul>
+	{#each postTags as postTag}
+		<li>
+			<a href="/posts?tag={postTag}">
+				#{postTag}
+			</a>
+		</li>
+	{/each}
+</ul>
 
 <style>
-	footer {
-		border-top: 1px solid black;
-		margin-top: 1em;
-		padding-top: 1em;
-	}
-
 	ul {
 		list-style: none;
 		margin: 0;
-		padding: 0;
+		padding: var(--padding-block, 1rem) 0 0;
+		border-top: 1px solid black;
 	}
 
 	li {
