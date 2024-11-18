@@ -1,7 +1,7 @@
 <script lang="ts">
 	let { date }: { date: string | Date } = $props();
 
-	const parsedDate = date instanceof Date ? date : new Date(date);
+	const parsedDate = $derived(date instanceof Date ? date : new Date(date));
 
 	const dateFormatter = new Intl.DateTimeFormat('en-CA', {
 		year: 'numeric',
