@@ -52,7 +52,7 @@
 		margin-bottom: 2rem;
 
 		& :global {
-			&:has(.heading a:hover) {
+			&:has(:global(.heading a:hover)) {
 				box-shadow: var(--shadow-size) var(--shadow-size) 0px black;
 			}
 		}
