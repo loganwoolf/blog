@@ -14,7 +14,7 @@
 	<div class="content">
 		<h1>{data.pageTitle}</h1>
 		<ul>
-			{#each data.posts.items as post}
+			{#each data.posts.items as post (post.id)}
 				<li>
 					<article>
 						<div class="relative">
