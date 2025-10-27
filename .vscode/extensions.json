@@ -1,3 +1,9 @@
 {
-	"recommendations": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "svelte.svelte-vscode"]
+	"recommendations": [
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"leizongmin.node-module-intellisense",
+		"svelte.svelte-vscode",
+		"yoavbls.pretty-ts-errors"
+	]
 }
