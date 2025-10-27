@@ -1,15 +1,17 @@
-<script>
+<script lang="ts">
+	import { resolve } from '$app/paths';
 	import '$lib/styles.css';
+	import type { Snippet } from 'svelte';
 
-	let { children } = $props();
+	let { children }: { children: Snippet } = $props();
 </script>
 
 <header>
 	<nav>
 		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/posts">Posts</a></li>
-			<li><a href="/about">About Me</a></li>
+			<li><a href={resolve('/')}>Home</a></li>
+			<li><a href={resolve('/posts/')}>Posts</a></li>
+			<li><a href={resolve('/resume/')}>About Me</a></li>
 		</ul>
 	</nav>
 </header>

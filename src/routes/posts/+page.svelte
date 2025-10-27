@@ -14,7 +14,7 @@
 	<div class="content">
 		<h1>{data.pageTitle}</h1>
 		<ul>
-			{#each data.posts.items as post}
+			{#each data.posts.items as post (post.id)}
 				<li>
 					<article>
 						<div class="relative">
@@ -52,7 +52,7 @@
 		margin-bottom: 2rem;
 
 		& :global {
-			&:has(.heading a:hover) {
+			&:has(:global(.heading a:hover)) {
 				box-shadow: var(--shadow-size) var(--shadow-size) 0px black;
 			}
 		}

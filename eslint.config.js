@@ -1,12 +1,12 @@
-import prettier from 'eslint-config-prettier';
 import js from '@eslint/js';
+import prettier from 'eslint-config-prettier';
 import svelte from 'eslint-plugin-svelte';
 import globals from 'globals';
-import ts from 'typescript-eslint';
+import tseslint from 'typescript-eslint';
 
-export default ts.config(
+export default tseslint.config(
 	js.configs.recommended,
-	...ts.configs.recommended,
+	...tseslint.configs.recommendedTypeChecked,
 	...svelte.configs['flat/recommended'],
 	prettier,
 	...svelte.configs['flat/prettier'],
@@ -15,17 +15,27 @@ export default ts.config(
 			globals: {
 				...globals.browser,
 				...globals.node
+			},
+			parserOptions: {
+				projectService: true,
+				tsconfigRootDir: import.meta.dirname
 			}
 		}
 	},
 	{
 		files: ['**/*.svelte'],
-
 		languageOptions: {
 			parserOptions: {
-				parser: ts.parser
+				parser: tseslint.parser,
+				projectService: true,
+				tsconfigRootDir: import.meta.dirname,
+				extraFileExtensions: ['.svelte']
 			}
 		}
+	},
+	{
+		files: ['**/*.js'],
+		...tseslint.configs.disableTypeChecked
 	},
 	{
 		ignores: ['build/', '.svelte-kit/', 'dist/']
