@@ -1,5 +1,7 @@
 <script>
 	import Education from './Education.svelte';
+	import Skills from './Skills.svelte';
+	import Summary from './Summary.svelte';
 </script>
 
 <article>
@@ -9,6 +11,8 @@
 		<a href="mailto:loganwoolf@gmail.com">loganwoolf@gmail.com</a>
 	</header>
 	<main>
+		<Summary />
+		<Skills />
 		<Education />
 	</main>
 </article>
