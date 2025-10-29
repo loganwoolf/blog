@@ -29,7 +29,7 @@
 
 <Section heading="Skills">
 	<ul>
-		{#each skills as skill}
+		{#each skills as skill (skill.segment)}
 			<li>
 				<strong>{skill.segment}:</strong>
 				{skill.content}

@@ -45,7 +45,7 @@
 
 <Section heading="education">
 	<ol>
-		{#each entries as entry}
+		{#each entries as entry (entry.start)}
 			<li>
 				<h3>{entry.institution}</h3>
 				<p>{entry.program}</p>
@@ -56,7 +56,7 @@
 				</div>
 				<p>{entry.description}</p>
 				<ul>
-					{#each entry.points as point}
+					{#each entry.points as point (point)}
 						<li>{point}</li>
 					{/each}
 				</ul>

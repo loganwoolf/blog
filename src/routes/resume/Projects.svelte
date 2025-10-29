@@ -37,13 +37,13 @@
 
 <Section heading="Projects">
 	<ul>
-		{#each entries as { title, description, points }}
+		{#each entries as { title, description, points } (title)}
 			<li>
 				<h3>{title}</h3>
 				<p>{description}</p>
 				{#if points?.length}
 					<ul>
-						{#each points as point}
+						{#each points as point (point)}
 							<li>{point}</li>
 						{/each}
 					</ul>
