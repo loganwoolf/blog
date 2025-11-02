@@ -10,6 +10,20 @@
 		points: Array<string>;
 	}> = [
 		{
+			institution: 'Lighthouse Labs',
+			start: 'Jan 2022',
+			end: 'Apr 2022',
+			program: 'Web Development',
+			description: 'High-intensity program studying computer science topics and web programming.',
+			points: [
+				'JavaScript and Ruby',
+				'Data structures and algorithms',
+				'Node, React, Ruby on Rails, HTML templating, CSS',
+				'Environments and deployment',
+				'Technical writing',
+			],
+		},
+		{
 			institution: 'Northern Alberta Institute of Technology',
 			start: 'Sept 2006',
 			end: 'Apr 2008',
@@ -22,24 +36,9 @@
 				'Land Surveying + Geodesy',
 				'Programming (HP 50 calculator)',
 				'Drafting (manual, CAD)',
-				'Geographic Information Systems'
-			]
+				'Geographic Information Systems',
+			],
 		},
-		{
-			institution: 'Lighthouse Labs',
-			start: 'Jan 2022',
-			end: 'Apr 2022',
-			program: 'Web Development',
-			description:
-				'High-intensity program studying computer science topics, and programming for the web.',
-			points: [
-				'JavaScript and Ruby',
-				'Data structures and algorithms',
-				'Node, React, Ruby on Rails, HTML templating, CSS',
-				'Environments and deployment',
-				'Technical writing'
-			]
-		}
 	];
 </script>
 
