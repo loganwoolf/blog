@@ -3,7 +3,7 @@
 
 	let {
 		heading,
-		children
+		children,
 	}: {
 		heading: string;
 		children: Snippet;

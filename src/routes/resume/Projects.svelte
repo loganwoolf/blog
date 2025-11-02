@@ -16,22 +16,22 @@
 				'Consulted client on project requirements and estimated with high accuracy',
 				'Designed site using Figma. Provided wireframes and full color mocks of each page',
 				'Set up streamlined development infrastructure with CMS and Postgres running on private VPS, and frontend previews being deployed to Netlify on each push',
-				'Buil'
-			]
+				'Buil',
+			],
 		},
 		{
 			title: 'Ballymore Safety Products B2B BigCommerce Theme',
 			url: 'ballymore.com',
 			description:
 				'Added multiple features and customizations of a base BigCommerce stencil theme to meet client needs.',
-			points: ['']
+			points: [''],
 		},
 		{
 			title: 'Zagg Inc. BigCommerce Theme',
 			url: 'zagg.com',
 			description: '',
-			points: ['']
-		}
+			points: [''],
+		},
 	];
 </script>
 
