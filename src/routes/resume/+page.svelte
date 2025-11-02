@@ -10,7 +10,6 @@
 	<header>
 		<h1>Logan Woolf</h1>
 		<p>Web Developer</p>
-		<a href="mailto:loganwoolf@gmail.com">loganwoolf@gmail.com</a>
 	</header>
 	<main>
 		<Summary />
