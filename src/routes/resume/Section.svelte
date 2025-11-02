@@ -15,3 +15,9 @@
 
 	{@render children()}
 </section>
+
+<style>
+	h2 {
+		text-transform: capitalize;
+	}
+</style>
