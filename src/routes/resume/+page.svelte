@@ -1,5 +1,6 @@
 <script>
 	import Education from './Education.svelte';
+	import Points from './Points.svelte';
 	import Projects from './Projects.svelte';
 	import Skills from './Skills.svelte';
 	import Summary from './Summary.svelte';
@@ -14,6 +15,7 @@
 	<main>
 		<Summary />
 		<Skills />
+		<Points />
 		<Projects />
 		<Education />
 	</main>
