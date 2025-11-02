@@ -13,7 +13,7 @@
 	};
 </script>
 
-{#each Object.entries(sections) as [key, value]}
+{#each Object.entries(sections) as [key, value] (key)}
 	<Section heading={key}>
 		<ul>
 			{#each value as point (point)}
