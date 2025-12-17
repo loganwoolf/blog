@@ -3,11 +3,11 @@
 
 	const sections: Record<string, Array<string>> = {
 		strengths: [
-			'Outstanding communication: Able to explain intricate technologies to non-technical stakeholders.',
-			'Skilled at scoping and estimating new feature sets in a way that maximizes value and minimizes complexity.',
-			'Finds innovative solutions, particularly in resource-constrained environments or situations.',
-			'Rapidly builds client trust through empathy, reliability, and accountability.',
-			'Consistently inquisitive: always seeking improvement and writing code with clear, maintainable intent.',
+			'Delivers clear, goal-aligned communication attuned to stakeholder perspectives.',
+			'Builds client trust rapidly through empathy, reliability, and accountability.',
+			'Skilled at scoping and estimating new feature sets in a way that maximizes stakeholder value and minimizes project complexity.',
+			'Finds innovative solutions, particularly in resource-constrained environments or situations. ',
+			'Writes dead simple code with clear, maintainable intent.',
 		],
 		// preferences: ['Fully remote roles with established enterprises or agencies.']
 	};

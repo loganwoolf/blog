@@ -6,7 +6,7 @@
 	let { children }: { children: Snippet } = $props();
 </script>
 
-<header>
+<header class="print-hide">
 	<nav>
 		<ul>
 			<li><a href={resolve('/')}>Home</a></li>
@@ -18,7 +18,7 @@
 
 {@render children()}
 
-<footer>
+<footer class="print-hide">
 	<p>
 		Built with <a href="https://ubuntu.com">Ubuntu</a>,
 		<a href="https://pocketbase.io">Pocketbase</a>, and
