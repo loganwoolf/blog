@@ -19,7 +19,7 @@
 			],
 		},
 		{
-			title: 'Ballymore Safety Products B2B BigCommerce Theme',
+			title: 'Ballymore Safety Products B2B BigCommerce Stencil Theme',
 			url: 'ballymore.com',
 			description:
 				'Added multiple features and customizations to a base BigCommerce Stencil theme.',
@@ -30,7 +30,7 @@
 			],
 		},
 		{
-			title: 'Door County Coffee',
+			title: 'Door County Coffee BigCommerce Stencil Theme',
 			url: 'doorcountycoffee.com',
 			description:
 				'Scoped and performed subscription service integration upgrade to new API version.',
