@@ -14,11 +14,11 @@
 			start: '2022-06',
 			end: 'present',
 			points: [
-				'Lead developer for BigCommerce and Shopify Plus ecommerce projects for mid-to-large B2B and B2C clients across a variety of industries, including manufacturing, distribution, and retail.',
-				'Collaborate closely with cross-functional teams including designers, project managers, marketers, and external stakeholders to deliver high-quality ecommerce solutions that meet business goals and user needs.',
-				'Architect and implement custom themes, apps, and integrations on BigCommerce and Shopify platforms using platform .',
-				'Optimize website performance, accessibility, and SEO to enhance user experience and drive organic traffic growth.',
-				'Mentor junior developers and conduct code reviews to ensure adherence to best practices and maintain high code quality standards.',
+				'Lead developer on BigCommerce and Shopify Plus projects for mid-to-large B2B and B2C clients across manufacturing, distribution, and retail.',
+				'Architected and implemented custom themes, apps, and integrations on BigCommerce and Shopify platforms.',
+				'Optimized website performance and accessibility, improving page speed scores and search rankings for multiple clients.',
+				'Mentored junior developers through code reviews and pair programming to maintain high code quality standards.',
+				'Collaborated with cross-functional teams including designers, project managers, and marketers to deliver solutions meeting business goals and user needs.',
 			],
 		},
 		'Brown Okamura & Associates': {

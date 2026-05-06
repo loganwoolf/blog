@@ -2,12 +2,12 @@
 	import Section from './Section.svelte';
 
 	const sections: Record<string, Array<string>> = {
-		strengths: [
-			'Delivers clear, goal-aligned communication attuned to stakeholder perspectives.',
-			'Builds client trust rapidly through empathy, reliability, and accountability.',
-			'Skilled at scoping and estimating new feature sets in a way that maximizes stakeholder value and minimizes project complexity.',
-			'Finds innovative solutions, particularly in resource-constrained environments or situations. ',
-			'Writes dead simple code with clear, maintainable intent.',
+		Strengths: [
+			'Clear communication that aligns technical work with stakeholder goals.',
+			'Rapidly builds client trust through empathy, reliability, and accountability.',
+			'Scopes feature sets to maximize value while minimizing complexity.',
+			'Finds creative solutions in resource-constrained environments.',
+			'Writes maintainable code with clear intent.',
 		],
 		// preferences: ['Fully remote roles with established enterprises or agencies.']
 	};

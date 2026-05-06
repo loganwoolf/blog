@@ -11,7 +11,7 @@
 			title: 'Lethbridge Northern Irrigation District Website',
 			url: 'lnid.ca',
 			description:
-				'Designed, architected and implemented a greenfield information portal using SvelteKit and Strapi CMS, creating a modern, maintainable, and performant web presence for a public agency.',
+				'Designed, architected, and implemented a greenfield information portal using SvelteKit and Strapi CMS for a public agency, replacing an outdated legacy system with a modern, maintainable, and performant web presence.',
 			points: [
 				'Gathered and aligned on project requirements through stakeholder interviews and feedback sessions.',
 				'Prototyped site in Figma with comprehensive wireframes and full-color page mocks.',
@@ -26,14 +26,14 @@
 			points: [
 				'Replaced jQuery modals with browser-native dialog feature powered by handlebars.js snippets.',
 				'Created parallel B2BEdition and Formstack quote systems to handle customer&apos;s complex quoting needs.',
-				'Supported catalog migration of 10,000+ SKUs including theme modifications, catalog migration scripts and webhook-invoked AWS Lambda functions.',
+				'Led catalog migration of 10,000+ SKUs, including theme modifications, migration scripts, and webhook-invoked AWS Lambda functions.',
 			],
 		},
 		{
 			title: 'Door County Coffee BigCommerce Stencil Theme',
 			url: 'doorcountycoffee.com',
 			description:
-				'Scoped and performed subscription service integration upgrade to new API version.',
+				'Scoped and led upgrade of subscription service integration to new API version.',
 			points: [
 				'Migrated site from deprecated web component solution to REST API integration.',
 				'Developed custom frontend components for product and cart pages to present subscription options clearly to users.',
@@ -44,20 +44,18 @@
 </script>
 
 <Section heading="Projects">
-	<ul>
-		{#each entries as { title, url, description, points } (title)}
-			<li>
-				<h3>{title}</h3>
-				<p><a href="https://{url}/" target="_blank" rel="noopener noreferrer">{url}</a></p>
-				<p>{description}</p>
-				{#if points?.length}
-					<ul>
-						{#each points as point (point)}
-							<li>{point}</li>
-						{/each}
-					</ul>
-				{/if}
-			</li>
+	{#each entries as { title, url, description, points } (title)}
+		<div>
+			<h3>{title}</h3>
+			<p><a href="https://{url}/" target="_blank" rel="noopener noreferrer">{url}</a></p>
+			<p>{description}</p>
+			{#if points?.length}
+				<ul>
+					{#each points as point (point)}
+						<li>{point}</li>
+					{/each}
+				</ul>
+			{/if}
+</div>
 		{/each}
-	</ul>
 </Section>

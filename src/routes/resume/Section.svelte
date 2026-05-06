@@ -18,6 +18,8 @@
 
 <style>
 	h2 {
+		border-bottom: 1px solid currentColor;
+		padding-block: 0.25em;
 		text-transform: capitalize;
 	}
 </style>

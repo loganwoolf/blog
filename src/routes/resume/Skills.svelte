@@ -12,7 +12,7 @@
 	};
 </script>
 
-<Section heading="technical skills">
+<Section heading="Technical Skills">
 	<ul>
 		{#each Object.entries(skills) as [segment, content] (segment)}
 			<li>
