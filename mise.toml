@@ -1,0 +1,6 @@
+[tools]
+node = "22"
+pnpm = "latest"
+
+[settings]
+npm.package_manager = "pnpm"
