@@ -37,13 +37,13 @@
 	{#each Object.entries(entries) as [company, details] (company)}
 		<article>
 			<h3>{details.role}</h3>
-			<section>
-				<p>{company}</p>
-				<p>
+			<p class="spread">
+				<span>{company}</span>
+				<span>
 					<time datetime={details.start}>{details.start}</time> to
 					<time datetime={details.end}>{details.end}</time>
-				</p>
-			</section>
+				</span>
+			</p>
 			<ul>
 				{#each details.points as point (point)}
 					<li>{point}</li>

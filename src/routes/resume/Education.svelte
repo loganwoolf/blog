@@ -46,11 +46,13 @@
 	{#each entries as entry (entry.start)}
 		<article>
 			<h3>{entry.institution}</h3>
-			<p>{entry.program}</p>
-			<p>
-				<time datetime={entry.start}>{entry.start}</time>
-				-
-				<time datetime={entry.end}>{entry.end}</time>
+			<p class="spread">
+				<span>{entry.program}</span>
+				<span>
+					<time datetime={entry.start}>{entry.start}</time>
+					-
+					<time datetime={entry.end}>{entry.end}</time>
+				</span>
 			</p>
 			<p>{entry.description}</p>
 			<ul>
