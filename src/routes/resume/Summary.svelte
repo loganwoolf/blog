@@ -1,14 +1,17 @@
 <script lang="ts">
 	import Section from './Section.svelte';
+
+	function getYearsSince(refDate: Date) {
+		return Math.floor((Date.now() - +refDate) / (1000 * 60 * 60 * 24 * 365));
+	}
 </script>
 
 <Section heading="Summary">
 	<p>
-		Frontend-focused Web Developer with 3 years of experience specializing in ecommerce platforms
-		and corporate websites. Skilled in React, Svelte, Node.js, and modern templating languages, with
-		a strong foundation in HTML, CSS and JavaScript. Creates developer tools—command-line utilities,
-		migration scripts, environment enhancements—that streamline workflows and boost team efficiency.
-		Collaborative problem-solver who bridges technical requirements with UX/UI goals to ensure
-		stakeholder alignment and successful project outcomes.
+		Web Developer with {getYearsSince(new Date('2022-01-01'))} years of experience building for ecommerce platforms
+		and public agencies. Skilled in React, Svelte, Node.js, and modern templating languages, equally comfortable
+		delivering custom themes, apps, integrations, and greenfield projects from scratch. Builds tools and workflows
+		that streamline operations for teams and clients, from migration scripts to CLI utilities. Collaborates with
+		stakeholders and designers to build systems that work and look great.
 	</p>
 </Section>

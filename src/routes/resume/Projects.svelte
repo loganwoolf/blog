@@ -24,9 +24,9 @@
 			description:
 				'Added multiple features and customizations to a base BigCommerce Stencil theme.',
 			points: [
-				'Replaced jQuery modals with browser-native dialog feature powered by handlebars.js snippets.',
-				'Created parallel B2BEdition and Formstack quote systems to handle customer&apos;s complex quoting needs.',
-				'Led catalog migration of 10,000+ SKUs, including theme modifications, migration scripts, and webhook-invoked AWS Lambda functions.',
+				'Formstack\'s one-form-per-page limit was blocking their multi-brand setup. Reverse-engineered undocumented APIs to enable simultaneous quote request flows.',
+				'jQuery modals were slow and a maintenance burden. Replaced with server-rendered browser-native dialogs that opened with content instantly—composable in a React-like way.',
+				'Migrated 10,000+ SKUs with theme modifications, migration scripts, and webhook-triggered Lambda functions.',
 			],
 		},
 		{
@@ -35,9 +35,7 @@
 			description:
 				'Scoped and led upgrade of subscription service integration to new API version.',
 			points: [
-				'Migrated site from deprecated web component solution to REST API integration.',
-				'Developed custom frontend components for product and cart pages to present subscription options clearly to users.',
-				'Developed upsell flow to add one-time items to next subscription order.',
+				'Ordergroove was injecting production-only scripts in production, causing bugs in development. Diagnosed issue, ported scripts into theme with full visibility. Eliminated gremlins, gave team control for safer development.',
 			],
 		},
 	];

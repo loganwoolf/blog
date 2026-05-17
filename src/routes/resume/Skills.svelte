@@ -3,12 +3,13 @@
 
 	const skills: Record<string, string> = {
 		'Languages and Frameworks':
-			'NextJS, SvelteKit, JavaScript/TypeScript (including vanilla solutions), React, Svelte, Handlebars, CSS/SCSS, Tailwind, Strapi CMS, Postgres, SQLite.',
-		'E-commerce':
-			'BigCommerce (Stencil themes, REST & GraphQL APIs, storefront/catalog management, B2B Edition and APIs, platform app development), Shopify (Shopify 2.0 themes, storefront management), Google Tag Manager, Klaviyo.',
+			'NextJS, SvelteKit, JavaScript/TypeScript, React, Svelte, Handlebars, CSS/SCSS, Tailwind, Postgres, SQLite.',
+		'BigCommerce': 'Stencil themes, REST & GraphQL APIs, storefront/catalog management, B2B Edition, platform app development.',
+		'Shopify': 'Shopify 2.0 themes, storefront/catalog/app management.',
+		'Other Platforms': 'ShareTribe, Strapi CMS, Klaviyo, Ordergroove.',
 		'DevOps & Tools':
-			'git and GitHub, Linux, SSH, self-hosting (pm2, nginx), cloud deployment (Netlify, Vercel), AWS (SNS, Lambda), npm registry and library creation, automation via scripting, Figma, Claude code.',
-		Other: 'Web accessibility and responsiveness, Pagespeed analysis and optimization.',
+			'git and GitHub, Linux, SSH, self-hosting (pm2, nginx), cloud deployment (Netlify, Vercel), AWS (SNS, Lambda), npm registry and library creation, automation via scripting, Figma, Claude Code, Codex, MCP.',
+		'Core Web': 'Web accessibility and responsiveness, Pagespeed analysis and optimization.',
 	};
 </script>
 

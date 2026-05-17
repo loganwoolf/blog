@@ -1,15 +1,16 @@
 <script lang="ts">
 	import Section from './Section.svelte';
 
-	const sections: Record<string, Array<string>> = {
+const sections: Record<string, Array<string>> = {
 		Strengths: [
-			'Clear communication that aligns technical work with stakeholder goals.',
-			'Rapidly builds client trust through empathy, reliability, and accountability.',
-			'Scopes feature sets to maximize value while minimizing complexity.',
-			'Finds creative solutions in resource-constrained environments.',
-			'Writes maintainable code with clear intent.',
+			'Digs into the real problem behind the stated request.',
+			'Builds client trust through honesty and follow-through.',
+			'Can narrow a feature list to what moves the needle.',
+			'Eliminates manual bottlenecks and elevates team performance.',
+			'Uses AI agents to debug at scale and tackle parallel tasks efficiently.',
+			'Comfortable finding workarounds when ideal solutions aren\'t available.',
+			'Writes code the next person can actually understand.',
 		],
-		// preferences: ['Fully remote roles with established enterprises or agencies.']
 	};
 </script>
 
