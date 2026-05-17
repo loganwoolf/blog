@@ -14,13 +14,13 @@ export default tseslint.config(
 		languageOptions: {
 			globals: {
 				...globals.browser,
-				...globals.node
+				...globals.node,
 			},
 			parserOptions: {
 				projectService: true,
-				tsconfigRootDir: import.meta.dirname
-			}
-		}
+				tsconfigRootDir: import.meta.dirname,
+			},
+		},
 	},
 	{
 		files: ['**/*.svelte'],
@@ -29,15 +29,15 @@ export default tseslint.config(
 				parser: tseslint.parser,
 				projectService: true,
 				tsconfigRootDir: import.meta.dirname,
-				extraFileExtensions: ['.svelte']
-			}
-		}
+				extraFileExtensions: ['.svelte'],
+			},
+		},
 	},
 	{
 		files: ['**/*.js'],
-		...tseslint.configs.disableTypeChecked
+		...tseslint.configs.disableTypeChecked,
 	},
 	{
-		ignores: ['build/', '.svelte-kit/', 'dist/']
+		ignores: ['build/', '.svelte-kit/', 'dist/'],
 	}
 );

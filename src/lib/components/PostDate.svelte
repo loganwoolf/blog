@@ -6,7 +6,7 @@
 	const dateFormatter = new Intl.DateTimeFormat('en-CA', {
 		year: 'numeric',
 		month: 'long',
-		day: 'numeric'
+		day: 'numeric',
 	});
 </script>
 

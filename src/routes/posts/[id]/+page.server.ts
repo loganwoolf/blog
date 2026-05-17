@@ -6,6 +6,6 @@ export const load: PageServerLoad = async ({ params, locals: { pb } }) => {
 
 	return {
 		post: await pb.collection('posts').getFirstListItem<Post>(`id="${params.id}"`),
-		tags: await pb.collection('tags').getFullList<Tag>()
+		tags: await pb.collection('tags').getFullList<Tag>(),
 	};
 };

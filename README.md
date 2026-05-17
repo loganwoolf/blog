@@ -1,38 +1,81 @@
-# sv
+# Blog
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A SvelteKit-powered blog with PocketBase backend integration.
 
-## Creating a project
+## Prerequisites
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Node.js 18+
+- npm (or pnpm/yarn)
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Environment Variables
 
-# create a new project in my-app
-npx sv create my-app
-```
+Copy `.env.example` to `.env` and configure:
 
-## Developing
+| Variable | Description |
+|----------|-------------|
+| `PB_URL` | PocketBase API URL. Set to `bypass` to skip PocketBase (for working on non-post routes) |
+| `ADAPTER` | Set to `node` for production deployment (optional, defaults to auto) |
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
+## Development
 
 ```bash
-npm run build
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
+
+# Start with browser open
+pnpm dev -- --open
 ```
 
-You can preview the production build with `npm run preview`.
+## Production
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```bash
+# Install dependencies
+pnpm install
+
+# Build for production
+pnpm build
+
+# Preview production build
+pnpm preview
+```
+
+For a Node.js server deployment, set the adapter:
+
+```bash
+ADAPTER=node pnpm build
+```
+
+The built app will be in the `build/` directory (or `dist/` with node adapter).
+
+### Running the Production Server
+
+With the node adapter, run:
+
+```bash
+node build/index.js
+```
+
+Or use a process manager like `pm2`:
+
+```bash
+pm2 start build/index.js
+```
+
+## Code Quality
+
+```bash
+# Type checking
+pnpm check
+
+# Format code
+pnpm format
+
+# Lint
+pnpm lint
+
+# Fix lint issues
+pnpm fix
+```

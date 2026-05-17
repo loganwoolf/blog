@@ -16,7 +16,7 @@ export const load: PageServerLoad = async ({ locals: { pb }, parent, url }) => {
 		pageTitle: `Posts${tagId ? ' tagged #' + selectedTagName : ''}`,
 		posts: await pb.collection('posts').getList<Post>(1, 5, {
 			sort: '-publish_date',
-			filter
-		})
+			filter,
+		}),
 	};
 };
